@@ -29,6 +29,10 @@ namespace Calendar_Project
                 writer = new StreamWriter("usersettings.ini");
                 writer.WriteLine("Name: "+ name);
             }
+            catch
+            {
+
+            }
 
 
         }

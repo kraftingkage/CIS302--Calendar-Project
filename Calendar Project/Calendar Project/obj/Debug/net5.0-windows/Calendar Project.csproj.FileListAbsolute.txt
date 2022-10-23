@@ -6,3 +6,14 @@ C:\Users\Kyle Bramwell\Desktop\CIS302--Calendar-Project\Calendar Project\Calenda
 C:\Users\Kyle Bramwell\Desktop\CIS302--Calendar-Project\Calendar Project\Calendar Project\obj\Debug\net5.0-windows\Calendar Project.AssemblyInfoInputs.cache
 C:\Users\Kyle Bramwell\Desktop\CIS302--Calendar-Project\Calendar Project\Calendar Project\obj\Debug\net5.0-windows\Calendar Project.AssemblyInfo.cs
 C:\Users\Kyle Bramwell\Desktop\CIS302--Calendar-Project\Calendar Project\Calendar Project\obj\Debug\net5.0-windows\Calendar Project.csproj.CoreCompileInputs.cache
+C:\Users\Kyle Bramwell\Desktop\CIS302--Calendar-Project\Calendar Project\Calendar Project\bin\Debug\net5.0-windows\Calendar Project.exe
+C:\Users\Kyle Bramwell\Desktop\CIS302--Calendar-Project\Calendar Project\Calendar Project\bin\Debug\net5.0-windows\Calendar Project.deps.json
+C:\Users\Kyle Bramwell\Desktop\CIS302--Calendar-Project\Calendar Project\Calendar Project\bin\Debug\net5.0-windows\Calendar Project.runtimeconfig.json
+C:\Users\Kyle Bramwell\Desktop\CIS302--Calendar-Project\Calendar Project\Calendar Project\bin\Debug\net5.0-windows\Calendar Project.runtimeconfig.dev.json
+C:\Users\Kyle Bramwell\Desktop\CIS302--Calendar-Project\Calendar Project\Calendar Project\bin\Debug\net5.0-windows\Calendar Project.dll
+C:\Users\Kyle Bramwell\Desktop\CIS302--Calendar-Project\Calendar Project\Calendar Project\bin\Debug\net5.0-windows\ref\Calendar Project.dll
+C:\Users\Kyle Bramwell\Desktop\CIS302--Calendar-Project\Calendar Project\Calendar Project\bin\Debug\net5.0-windows\Calendar Project.pdb
+C:\Users\Kyle Bramwell\Desktop\CIS302--Calendar-Project\Calendar Project\Calendar Project\obj\Debug\net5.0-windows\Calendar Project.dll
+C:\Users\Kyle Bramwell\Desktop\CIS302--Calendar-Project\Calendar Project\Calendar Project\obj\Debug\net5.0-windows\ref\Calendar Project.dll
+C:\Users\Kyle Bramwell\Desktop\CIS302--Calendar-Project\Calendar Project\Calendar Project\obj\Debug\net5.0-windows\Calendar Project.pdb
+C:\Users\Kyle Bramwell\Desktop\CIS302--Calendar-Project\Calendar Project\Calendar Project\obj\Debug\net5.0-windows\Calendar Project.genruntimeconfig.cache
