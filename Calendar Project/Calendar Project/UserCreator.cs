@@ -21,17 +21,19 @@ namespace Calendar_Project
         private void buttonCreateAccount_Click(object sender, EventArgs e)
         {
             String name = userName.Text;
-            File.Create("usersettings.ini");
-            StreamWriter writer = null;
+            StreamWriter writer;
 
             try
             {
                 writer = new StreamWriter("usersettings.ini");
                 writer.WriteLine("Name: "+ name);
+                writer.Close();
+                MessageBox.Show("Changes have been submitted, closing application.");
+                Application.Exit();
             }
-            catch
+            catch(Exception ex)
             {
-
+                MessageBox.Show(ex.Message);
             }
 
 
