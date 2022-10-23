@@ -20,7 +20,6 @@ namespace Calendar_Project
 
         private void buttonCreateAccount_Click(object sender, EventArgs e)
         {
-            //adding this to see if I can commit inside of vstudio
             String name = userName.Text;
             File.Create("usersettings.ini");
             StreamWriter writer = null;
