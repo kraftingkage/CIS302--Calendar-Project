@@ -1,0 +1,8 @@
+C:\Users\Kyle Bramwell\Desktop\CIS302--Calendar-Project\Calendar Project\Calendar Project\obj\Debug\net5.0-windows\Calendar Project.csproj.AssemblyReference.cache
+C:\Users\Kyle Bramwell\Desktop\CIS302--Calendar-Project\Calendar Project\Calendar Project\obj\Debug\net5.0-windows\Calendar_Project.Form1.resources
+C:\Users\Kyle Bramwell\Desktop\CIS302--Calendar-Project\Calendar Project\Calendar Project\obj\Debug\net5.0-windows\Calendar_Project.UserCreator.resources
+C:\Users\Kyle Bramwell\Desktop\CIS302--Calendar-Project\Calendar Project\Calendar Project\obj\Debug\net5.0-windows\Calendar Project.csproj.GenerateResource.cache
+C:\Users\Kyle Bramwell\Desktop\CIS302--Calendar-Project\Calendar Project\Calendar Project\obj\Debug\net5.0-windows\Calendar Project.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Kyle Bramwell\Desktop\CIS302--Calendar-Project\Calendar Project\Calendar Project\obj\Debug\net5.0-windows\Calendar Project.AssemblyInfoInputs.cache
+C:\Users\Kyle Bramwell\Desktop\CIS302--Calendar-Project\Calendar Project\Calendar Project\obj\Debug\net5.0-windows\Calendar Project.AssemblyInfo.cs
+C:\Users\Kyle Bramwell\Desktop\CIS302--Calendar-Project\Calendar Project\Calendar Project\obj\Debug\net5.0-windows\Calendar Project.csproj.CoreCompileInputs.cache

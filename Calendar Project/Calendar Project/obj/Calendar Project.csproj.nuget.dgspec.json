@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Kyle Bramwell\\Desktop\\CIS302- Calendar Project\\Calendar Project\\Calendar Project\\Calendar Project.csproj": {}
+    "C:\\Users\\Kyle Bramwell\\Desktop\\CIS302--Calendar-Project\\Calendar Project\\Calendar Project\\Calendar Project.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Kyle Bramwell\\Desktop\\CIS302- Calendar Project\\Calendar Project\\Calendar Project\\Calendar Project.csproj": {
+    "C:\\Users\\Kyle Bramwell\\Desktop\\CIS302--Calendar-Project\\Calendar Project\\Calendar Project\\Calendar Project.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Kyle Bramwell\\Desktop\\CIS302- Calendar Project\\Calendar Project\\Calendar Project\\Calendar Project.csproj",
+        "projectUniqueName": "C:\\Users\\Kyle Bramwell\\Desktop\\CIS302--Calendar-Project\\Calendar Project\\Calendar Project\\Calendar Project.csproj",
         "projectName": "Calendar Project",
-        "projectPath": "C:\\Users\\Kyle Bramwell\\Desktop\\CIS302- Calendar Project\\Calendar Project\\Calendar Project\\Calendar Project.csproj",
+        "projectPath": "C:\\Users\\Kyle Bramwell\\Desktop\\CIS302--Calendar-Project\\Calendar Project\\Calendar Project\\Calendar Project.csproj",
         "packagesPath": "C:\\Users\\Kyle Bramwell\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Kyle Bramwell\\Desktop\\CIS302- Calendar Project\\Calendar Project\\Calendar Project\\obj\\",
+        "outputPath": "C:\\Users\\Kyle Bramwell\\Desktop\\CIS302--Calendar-Project\\Calendar Project\\Calendar Project\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Kyle Bramwell\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -55,7 +55,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.412\\RuntimeIdentifierGraph.json"
         }
       }
     }
