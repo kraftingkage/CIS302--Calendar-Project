@@ -26,6 +26,26 @@ namespace Calendar_Project
                 UserCreator f = new UserCreator();
                 f.Show();
             }
+            else
+            {
+                initSettings();
+            }
+
+        }
+        private void initSettings()
+        {
+            StreamReader reader = new StreamReader("usersettings.ini");
+            string data = reader.ReadLine();
+
+            while(data != null)
+            {
+                if (data.StartsWith("Name:"))
+                {
+                    string name = data.Replace("Name: ", "");
+                    label1.Text = "Welcome,\n" + name;
+                }
+                data = reader.ReadLine();
+            }
         }
     }
 }
