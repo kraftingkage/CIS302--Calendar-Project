@@ -32,6 +32,8 @@ namespace Calendar_Project
             }
 
         }
+
+        //Setting all labels with their corresponding days/names
         private void initSettings()
         {
             StreamReader reader = new StreamReader("usersettings.ini");
@@ -45,7 +47,52 @@ namespace Calendar_Project
                     label1.Text = "Welcome,\n" + name;
                 }
                 data = reader.ReadLine();
+                }
+
+            DateTime today = DateTime.Today;
+            DateTime d = DateTime.Today;
+            int z = 0;
+            while (d != today.AddDays(7))
+            {
+                switch (z)
+                {
+                    case 0:
+                        todayDate.Text = d.ToShortDateString();
+                        todayTitle.Text = d.DayOfWeek.ToString();
+                        break;
+                    case 1:
+                        p1Date.Text = d.ToShortDateString();
+                        p1Title.Text = d.DayOfWeek.ToString();
+                        break;
+                    case 2:
+                        p2Date.Text = d.ToShortDateString();
+                        p2Title.Text = d.DayOfWeek.ToString();
+                        break;
+                    case 3:
+                        p3Date.Text = d.ToShortDateString();
+                        p3Title.Text = d.DayOfWeek.ToString();
+                        break;
+                    case 4:
+                        p4Date.Text = d.ToShortDateString();
+                        p4Title.Text = d.DayOfWeek.ToString();
+                        break;
+                    case 5:
+                        p5Date.Text = d.ToShortDateString();
+                        p5Title.Text = d.DayOfWeek.ToString();
+                        break;
+                    case 6:
+                        p6Date.Text = d.ToShortDateString();
+                        p6Title.Text = d.DayOfWeek.ToString();
+                        break;
+                }
+                z++;
+                d = d.AddDays(1);
             }
+
         }
+
+
+
     }
 }
+

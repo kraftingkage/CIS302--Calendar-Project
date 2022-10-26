@@ -82,20 +82,20 @@ namespace Calendar_Project
             this.nextButton = new System.Windows.Forms.Button();
             this.previousButton = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.sunDate = new System.Windows.Forms.Label();
-            this.monDate = new System.Windows.Forms.Label();
-            this.tuesDate = new System.Windows.Forms.Label();
-            this.wedDate = new System.Windows.Forms.Label();
-            this.thurDate = new System.Windows.Forms.Label();
-            this.friDate = new System.Windows.Forms.Label();
-            this.satDate = new System.Windows.Forms.Label();
+            this.todayTitle = new System.Windows.Forms.Label();
+            this.p1Title = new System.Windows.Forms.Label();
+            this.p2Title = new System.Windows.Forms.Label();
+            this.p3Title = new System.Windows.Forms.Label();
+            this.p4Title = new System.Windows.Forms.Label();
+            this.p5Title = new System.Windows.Forms.Label();
+            this.p6Title = new System.Windows.Forms.Label();
+            this.todayDate = new System.Windows.Forms.Label();
+            this.p1Date = new System.Windows.Forms.Label();
+            this.p2Date = new System.Windows.Forms.Label();
+            this.p3Date = new System.Windows.Forms.Label();
+            this.p4Date = new System.Windows.Forms.Label();
+            this.p5Date = new System.Windows.Forms.Label();
+            this.p6Date = new System.Windows.Forms.Label();
             this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -525,158 +525,158 @@ namespace Calendar_Project
             this.label1.TabIndex = 3;
             this.label1.Text = "Welcome,";
             // 
-            // label2
+            // todayTitle
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(168, 137);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(98, 32);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Sunday";
+            this.todayTitle.AutoSize = true;
+            this.todayTitle.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.todayTitle.Location = new System.Drawing.Point(168, 137);
+            this.todayTitle.Name = "todayTitle";
+            this.todayTitle.Size = new System.Drawing.Size(98, 32);
+            this.todayTitle.TabIndex = 4;
+            this.todayTitle.Text = "Sunday";
             // 
-            // label3
+            // p1Title
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(372, 137);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(108, 32);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "Monday";
+            this.p1Title.AutoSize = true;
+            this.p1Title.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.p1Title.Location = new System.Drawing.Point(372, 137);
+            this.p1Title.Name = "p1Title";
+            this.p1Title.Size = new System.Drawing.Size(108, 32);
+            this.p1Title.TabIndex = 5;
+            this.p1Title.Text = "Monday";
             // 
-            // label4
+            // p2Title
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(581, 137);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(106, 32);
-            this.label4.TabIndex = 6;
-            this.label4.Text = "Tuesday";
+            this.p2Title.AutoSize = true;
+            this.p2Title.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.p2Title.Location = new System.Drawing.Point(581, 137);
+            this.p2Title.Name = "p2Title";
+            this.p2Title.Size = new System.Drawing.Size(106, 32);
+            this.p2Title.TabIndex = 6;
+            this.p2Title.Text = "Tuesday";
             // 
-            // label5
+            // p3Title
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(768, 137);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(145, 32);
-            this.label5.TabIndex = 7;
-            this.label5.Text = "Wednesday";
+            this.p3Title.AutoSize = true;
+            this.p3Title.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.p3Title.Location = new System.Drawing.Point(768, 137);
+            this.p3Title.Name = "p3Title";
+            this.p3Title.Size = new System.Drawing.Size(145, 32);
+            this.p3Title.TabIndex = 7;
+            this.p3Title.Text = "Wednesday";
             // 
-            // label6
+            // p4Title
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label6.Location = new System.Drawing.Point(991, 137);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(119, 32);
-            this.label6.TabIndex = 8;
-            this.label6.Text = "Thursday";
+            this.p4Title.AutoSize = true;
+            this.p4Title.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.p4Title.Location = new System.Drawing.Point(991, 137);
+            this.p4Title.Name = "p4Title";
+            this.p4Title.Size = new System.Drawing.Size(119, 32);
+            this.p4Title.TabIndex = 8;
+            this.p4Title.Text = "Thursday";
             // 
-            // label7
+            // p5Title
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label7.Location = new System.Drawing.Point(1213, 137);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(84, 32);
-            this.label7.TabIndex = 9;
-            this.label7.Text = "Friday";
+            this.p5Title.AutoSize = true;
+            this.p5Title.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.p5Title.Location = new System.Drawing.Point(1213, 137);
+            this.p5Title.Name = "p5Title";
+            this.p5Title.Size = new System.Drawing.Size(84, 32);
+            this.p5Title.TabIndex = 9;
+            this.p5Title.Text = "Friday";
             // 
-            // label8
+            // p6Title
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label8.Location = new System.Drawing.Point(1402, 137);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(115, 32);
-            this.label8.TabIndex = 10;
-            this.label8.Text = "Saturday";
+            this.p6Title.AutoSize = true;
+            this.p6Title.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.p6Title.Location = new System.Drawing.Point(1402, 137);
+            this.p6Title.Name = "p6Title";
+            this.p6Title.Size = new System.Drawing.Size(115, 32);
+            this.p6Title.TabIndex = 10;
+            this.p6Title.Text = "Saturday";
             // 
-            // sunDate
+            // todayDate
             // 
-            this.sunDate.AutoSize = true;
-            this.sunDate.Location = new System.Drawing.Point(194, 122);
-            this.sunDate.Name = "sunDate";
-            this.sunDate.Size = new System.Drawing.Size(50, 15);
-            this.sunDate.TabIndex = 11;
-            this.sunDate.Text = "sunDate";
+            this.todayDate.AutoSize = true;
+            this.todayDate.Location = new System.Drawing.Point(194, 122);
+            this.todayDate.Name = "todayDate";
+            this.todayDate.Size = new System.Drawing.Size(65, 15);
+            this.todayDate.TabIndex = 11;
+            this.todayDate.Text = "todayLabel";
             // 
-            // monDate
+            // p1Date
             // 
-            this.monDate.AutoSize = true;
-            this.monDate.Location = new System.Drawing.Point(400, 122);
-            this.monDate.Name = "monDate";
-            this.monDate.Size = new System.Drawing.Size(56, 15);
-            this.monDate.TabIndex = 12;
-            this.monDate.Text = "monDate";
+            this.p1Date.AutoSize = true;
+            this.p1Date.Location = new System.Drawing.Point(400, 122);
+            this.p1Date.Name = "p1Date";
+            this.p1Date.Size = new System.Drawing.Size(56, 15);
+            this.p1Date.TabIndex = 12;
+            this.p1Date.Text = "monDate";
             // 
-            // tuesDate
+            // p2Date
             // 
-            this.tuesDate.AutoSize = true;
-            this.tuesDate.Location = new System.Drawing.Point(605, 122);
-            this.tuesDate.Name = "tuesDate";
-            this.tuesDate.Size = new System.Drawing.Size(53, 15);
-            this.tuesDate.TabIndex = 13;
-            this.tuesDate.Text = "tuesDate";
+            this.p2Date.AutoSize = true;
+            this.p2Date.Location = new System.Drawing.Point(605, 122);
+            this.p2Date.Name = "p2Date";
+            this.p2Date.Size = new System.Drawing.Size(53, 15);
+            this.p2Date.TabIndex = 13;
+            this.p2Date.Text = "tuesDate";
             // 
-            // wedDate
+            // p3Date
             // 
-            this.wedDate.AutoSize = true;
-            this.wedDate.Location = new System.Drawing.Point(813, 122);
-            this.wedDate.Name = "wedDate";
-            this.wedDate.Size = new System.Drawing.Size(53, 15);
-            this.wedDate.TabIndex = 14;
-            this.wedDate.Text = "wedDate";
+            this.p3Date.AutoSize = true;
+            this.p3Date.Location = new System.Drawing.Point(813, 122);
+            this.p3Date.Name = "p3Date";
+            this.p3Date.Size = new System.Drawing.Size(53, 15);
+            this.p3Date.TabIndex = 14;
+            this.p3Date.Text = "wedDate";
             // 
-            // thurDate
+            // p4Date
             // 
-            this.thurDate.AutoSize = true;
-            this.thurDate.Location = new System.Drawing.Point(1022, 122);
-            this.thurDate.Name = "thurDate";
-            this.thurDate.Size = new System.Drawing.Size(53, 15);
-            this.thurDate.TabIndex = 15;
-            this.thurDate.Text = "thurDate";
+            this.p4Date.AutoSize = true;
+            this.p4Date.Location = new System.Drawing.Point(1022, 122);
+            this.p4Date.Name = "p4Date";
+            this.p4Date.Size = new System.Drawing.Size(53, 15);
+            this.p4Date.TabIndex = 15;
+            this.p4Date.Text = "thurDate";
             // 
-            // friDate
+            // p5Date
             // 
-            this.friDate.AutoSize = true;
-            this.friDate.Location = new System.Drawing.Point(1231, 122);
-            this.friDate.Name = "friDate";
-            this.friDate.Size = new System.Drawing.Size(42, 15);
-            this.friDate.TabIndex = 16;
-            this.friDate.Text = "friDate";
+            this.p5Date.AutoSize = true;
+            this.p5Date.Location = new System.Drawing.Point(1231, 122);
+            this.p5Date.Name = "p5Date";
+            this.p5Date.Size = new System.Drawing.Size(42, 15);
+            this.p5Date.TabIndex = 16;
+            this.p5Date.Text = "friDate";
             // 
-            // satDate
+            // p6Date
             // 
-            this.satDate.AutoSize = true;
-            this.satDate.Location = new System.Drawing.Point(1435, 122);
-            this.satDate.Name = "satDate";
-            this.satDate.Size = new System.Drawing.Size(46, 15);
-            this.satDate.TabIndex = 17;
-            this.satDate.Text = "satDate";
+            this.p6Date.AutoSize = true;
+            this.p6Date.Location = new System.Drawing.Point(1435, 122);
+            this.p6Date.Name = "p6Date";
+            this.p6Date.Size = new System.Drawing.Size(46, 15);
+            this.p6Date.TabIndex = 17;
+            this.p6Date.Text = "satDate";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1581, 963);
-            this.Controls.Add(this.satDate);
-            this.Controls.Add(this.friDate);
-            this.Controls.Add(this.thurDate);
-            this.Controls.Add(this.wedDate);
-            this.Controls.Add(this.tuesDate);
-            this.Controls.Add(this.monDate);
-            this.Controls.Add(this.sunDate);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.p6Date);
+            this.Controls.Add(this.p5Date);
+            this.Controls.Add(this.p4Date);
+            this.Controls.Add(this.p3Date);
+            this.Controls.Add(this.p2Date);
+            this.Controls.Add(this.p1Date);
+            this.Controls.Add(this.todayDate);
+            this.Controls.Add(this.p6Title);
+            this.Controls.Add(this.p5Title);
+            this.Controls.Add(this.p4Title);
+            this.Controls.Add(this.p3Title);
+            this.Controls.Add(this.p2Title);
+            this.Controls.Add(this.p1Title);
+            this.Controls.Add(this.todayTitle);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.previousButton);
             this.Controls.Add(this.nextButton);
@@ -745,19 +745,19 @@ namespace Calendar_Project
         private System.Windows.Forms.Button nextButton;
         private System.Windows.Forms.Button previousButton;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label sunDate;
-        private System.Windows.Forms.Label monDate;
-        private System.Windows.Forms.Label tuesDate;
-        private System.Windows.Forms.Label wedDate;
-        private System.Windows.Forms.Label thurDate;
-        private System.Windows.Forms.Label friDate;
-        private System.Windows.Forms.Label satDate;
+        private System.Windows.Forms.Label todayTitle;
+        private System.Windows.Forms.Label p1Title;
+        private System.Windows.Forms.Label p2Title;
+        private System.Windows.Forms.Label p3Title;
+        private System.Windows.Forms.Label p4Title;
+        private System.Windows.Forms.Label p5Title;
+        private System.Windows.Forms.Label p6Title;
+        private System.Windows.Forms.Label todayDate;
+        private System.Windows.Forms.Label p1Date;
+        private System.Windows.Forms.Label p2Date;
+        private System.Windows.Forms.Label p3Date;
+        private System.Windows.Forms.Label p4Date;
+        private System.Windows.Forms.Label p5Date;
+        private System.Windows.Forms.Label p6Date;
     }
 }
