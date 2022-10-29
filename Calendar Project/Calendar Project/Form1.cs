@@ -88,11 +88,17 @@ namespace Calendar_Project
                 z++;
                 d = d.AddDays(1);
             }
+            //UserControl1 event1 = new UserControl1();
+            //panel1.Controls.Add(event1);
+
+            for(int i = 1; i < 24; i++)
+            {
+                UserControl1 event1 = new UserControl1();
+                panelSun.Controls.Add(event1);
+            }
 
         }
-
-
-
+            
     }
 }
 
