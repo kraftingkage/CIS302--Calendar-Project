@@ -12,9 +12,17 @@ namespace Calendar_Project
 {
     public partial class UserControl1 : UserControl
     {
-        public UserControl1()
+
+        string holder;
+        public UserControl1(string names)
         {
-            InitializeComponent();
+            InitializeComponent(names);
+            holder = names;
+        }
+
+        private void UserControl1_Load(object sender, EventArgs e)
+        {
+            eventTime.Text = holder;
         }
     }
 }

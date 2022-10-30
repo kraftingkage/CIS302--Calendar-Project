@@ -93,7 +93,7 @@ namespace Calendar_Project
 
             for(int i = 1; i < 24; i++)
             {
-                UserControl1 event1 = new UserControl1();
+                UserControl1 event1 = new UserControl1(i.ToString());
                 panelSun.Controls.Add(event1);
             }
 
