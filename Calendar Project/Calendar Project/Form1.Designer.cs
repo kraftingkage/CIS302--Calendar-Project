@@ -45,6 +45,12 @@ namespace Calendar_Project
             this.p5Date = new System.Windows.Forms.Label();
             this.p6Date = new System.Windows.Forms.Label();
             this.panelSun = new System.Windows.Forms.FlowLayoutPanel();
+            this.panelMon = new System.Windows.Forms.FlowLayoutPanel();
+            this.panelTues = new System.Windows.Forms.FlowLayoutPanel();
+            this.panelWed = new System.Windows.Forms.FlowLayoutPanel();
+            this.panelThurs = new System.Windows.Forms.FlowLayoutPanel();
+            this.panelFri = new System.Windows.Forms.FlowLayoutPanel();
+            this.panelSat = new System.Windows.Forms.FlowLayoutPanel();
             this.SuspendLayout();
             // 
             // label1
@@ -129,7 +135,7 @@ namespace Calendar_Project
             // todayDate
             // 
             this.todayDate.AutoSize = true;
-            this.todayDate.Location = new System.Drawing.Point(194, 122);
+            this.todayDate.Location = new System.Drawing.Point(182, 122);
             this.todayDate.Name = "todayDate";
             this.todayDate.Size = new System.Drawing.Size(65, 15);
             this.todayDate.TabIndex = 11;
@@ -196,11 +202,59 @@ namespace Calendar_Project
             this.panelSun.Size = new System.Drawing.Size(200, 779);
             this.panelSun.TabIndex = 18;
             // 
+            // panelMon
+            // 
+            this.panelMon.Location = new System.Drawing.Point(337, 172);
+            this.panelMon.Name = "panelMon";
+            this.panelMon.Size = new System.Drawing.Size(200, 779);
+            this.panelMon.TabIndex = 19;
+            // 
+            // panelTues
+            // 
+            this.panelTues.Location = new System.Drawing.Point(543, 172);
+            this.panelTues.Name = "panelTues";
+            this.panelTues.Size = new System.Drawing.Size(200, 779);
+            this.panelTues.TabIndex = 20;
+            // 
+            // panelWed
+            // 
+            this.panelWed.Location = new System.Drawing.Point(749, 172);
+            this.panelWed.Name = "panelWed";
+            this.panelWed.Size = new System.Drawing.Size(200, 779);
+            this.panelWed.TabIndex = 21;
+            // 
+            // panelThurs
+            // 
+            this.panelThurs.Location = new System.Drawing.Point(955, 172);
+            this.panelThurs.Name = "panelThurs";
+            this.panelThurs.Size = new System.Drawing.Size(200, 779);
+            this.panelThurs.TabIndex = 22;
+            // 
+            // panelFri
+            // 
+            this.panelFri.Location = new System.Drawing.Point(1161, 172);
+            this.panelFri.Name = "panelFri";
+            this.panelFri.Size = new System.Drawing.Size(200, 779);
+            this.panelFri.TabIndex = 23;
+            // 
+            // panelSat
+            // 
+            this.panelSat.Location = new System.Drawing.Point(1369, 172);
+            this.panelSat.Name = "panelSat";
+            this.panelSat.Size = new System.Drawing.Size(200, 779);
+            this.panelSat.TabIndex = 24;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1581, 963);
+            this.Controls.Add(this.panelSat);
+            this.Controls.Add(this.panelFri);
+            this.Controls.Add(this.panelThurs);
+            this.Controls.Add(this.panelWed);
+            this.Controls.Add(this.panelTues);
+            this.Controls.Add(this.panelMon);
             this.Controls.Add(this.panelSun);
             this.Controls.Add(this.p6Date);
             this.Controls.Add(this.p5Date);
@@ -242,5 +296,11 @@ namespace Calendar_Project
         private System.Windows.Forms.Label p5Date;
         private System.Windows.Forms.Label p6Date;
         private System.Windows.Forms.FlowLayoutPanel panelSun;
+        private System.Windows.Forms.FlowLayoutPanel panelMon;
+        private System.Windows.Forms.FlowLayoutPanel panelTues;
+        private System.Windows.Forms.FlowLayoutPanel panelWed;
+        private System.Windows.Forms.FlowLayoutPanel panelThurs;
+        private System.Windows.Forms.FlowLayoutPanel panelFri;
+        private System.Windows.Forms.FlowLayoutPanel panelSat;
     }
 }

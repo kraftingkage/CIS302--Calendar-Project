@@ -58,8 +58,8 @@ namespace Calendar_Project
             DateTime nextSun = Extension.Next(DateTime.Now, DayOfWeek.Sunday);
             DateTime target = nextSun.AddDays(-7);
 
-            //Sets the final day to check for as the original target.
             int z = 0;
+            
             while (target != nextSun.AddDays(7))
             {
                 switch (z)
@@ -99,7 +99,7 @@ namespace Calendar_Project
             
 
 
-            //Start of event controller
+            //Example of event controller
             for(int i = 1; i < 24; i++)
             {
                 UserControl1 event1 = new UserControl1(i.ToString());
