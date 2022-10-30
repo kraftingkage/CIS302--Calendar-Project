@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.IO;
 using System.Windows.Forms;
+using Calendar_Project;
 
 namespace Calendar_Project
 {
@@ -49,48 +50,56 @@ namespace Calendar_Project
                 data = reader.ReadLine();
                 }
 
-            DateTime today = DateTime.Today;
-            DateTime d = DateTime.Today;
+            /*
+             * Grabs the next sunday, and then finds previous sunday. NOTE: May find way to just find previous sunday, but this works without pain.
+             * As it stands... 'nextSun' variable find the next sunday. EG... Today is Saturday 10/29/22.. It will find Sunday 10/30/22 (as this would be the first day of next week)
+             * then, 'target' is the PREVIOUS Sunday, as it is the start of the CURRENT week.
+             */
+            DateTime nextSun = Extension.Next(DateTime.Now, DayOfWeek.Sunday);
+            DateTime target = nextSun.AddDays(-7);
+
+            //Sets the final day to check for as the original target.
             int z = 0;
-            while (d != today.AddDays(7))
+            while (target != nextSun.AddDays(7))
             {
                 switch (z)
                 {
                     case 0:
-                        todayDate.Text = d.ToShortDateString();
-                        todayTitle.Text = d.DayOfWeek.ToString();
+                        todayDate.Text = target.ToShortDateString();
+                        todayTitle.Text = target.DayOfWeek.ToString();
                         break;
                     case 1:
-                        p1Date.Text = d.ToShortDateString();
-                        p1Title.Text = d.DayOfWeek.ToString();
+                        p1Date.Text = target.ToShortDateString();
+                        p1Title.Text = target.DayOfWeek.ToString();
                         break;
                     case 2:
-                        p2Date.Text = d.ToShortDateString();
-                        p2Title.Text = d.DayOfWeek.ToString();
+                        p2Date.Text = target.ToShortDateString();
+                        p2Title.Text = target.DayOfWeek.ToString();
                         break;
                     case 3:
-                        p3Date.Text = d.ToShortDateString();
-                        p3Title.Text = d.DayOfWeek.ToString();
+                        p3Date.Text = target.ToShortDateString();
+                        p3Title.Text = target.DayOfWeek.ToString();
                         break;
                     case 4:
-                        p4Date.Text = d.ToShortDateString();
-                        p4Title.Text = d.DayOfWeek.ToString();
+                        p4Date.Text = target.ToShortDateString();
+                        p4Title.Text = target.DayOfWeek.ToString();
                         break;
                     case 5:
-                        p5Date.Text = d.ToShortDateString();
-                        p5Title.Text = d.DayOfWeek.ToString();
+                        p5Date.Text = target.ToShortDateString();
+                        p5Title.Text = target.DayOfWeek.ToString();
                         break;
                     case 6:
-                        p6Date.Text = d.ToShortDateString();
-                        p6Title.Text = d.DayOfWeek.ToString();
+                        p6Date.Text = target.ToShortDateString();
+                        p6Title.Text = target.DayOfWeek.ToString();
                         break;
                 }
                 z++;
-                d = d.AddDays(1);
+                target = target.AddDays(1);
             }
-            //UserControl1 event1 = new UserControl1();
-            //panel1.Controls.Add(event1);
+            
 
+
+            //Start of event controller
             for(int i = 1; i < 24; i++)
             {
                 UserControl1 event1 = new UserControl1(i.ToString());
@@ -98,7 +107,8 @@ namespace Calendar_Project
             }
 
         }
-            
+
+
     }
 }
 
