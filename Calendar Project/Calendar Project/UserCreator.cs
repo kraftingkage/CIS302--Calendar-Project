@@ -21,14 +21,21 @@ namespace Calendar_Project
         private void buttonCreateAccount_Click(object sender, EventArgs e)
         {
             String name = userName.Text;
-            StreamWriter writer;
+            StreamWriter writer1, writer2;
 
             try
             {
-                writer = new StreamWriter("usersettings.ini");
-                writer.WriteLine("Name: "+ name);
-                writer.Close();
-                MessageBox.Show("Changes have been submitted, closing application.");
+
+                writer1 = new StreamWriter("usersettings.ini");
+                writer1.WriteLine("Name: "+ name);
+                writer1.Close();
+
+                writer2 = new StreamWriter("userappointments.ini");
+                writer1.Close();
+
+
+                
+                MessageBox.Show("User account has been created, closing application.");
                 Application.Exit();
             }
             catch(Exception ex)
