@@ -99,15 +99,50 @@ namespace Calendar_Project
 
 
 
-
+            //Sunday
             for (int i = 1; i < 25; i++)
             {
-                eventControl event1 = new eventControl(i.ToString(), "This is a test");
+                eventControl event1 = new eventControl(i.ToString(), "This is Sunday");
                 panelSun.Controls.Add(event1);
+            }
+            //Monday
+            for (int i = 1; i < 25; i++)
+            {
+                eventControl event1 = new eventControl(i.ToString(), "This is Monday");
+                panelMon.Controls.Add(event1);
             }
 
         }
+        bool sidebarExpand = true;
+        private void sidebarTimer_Tick(object sender, EventArgs e)
+        {
+            if (sidebarExpand)
+            {
+                //If sidebar is expanded, minimise it.
+                sidebar.Width -= 10;
+                if (sidebar.Width == sidebar.MinimumSize.Width)
+                {
+                    sidebarExpand = false;
+                    sidebarTimer.Stop();
+                }
+            }else
+            {
+                sidebar.Width += 10;
+                if (sidebar.Width == sidebar.MaximumSize.Width)
+                {         
+                    sidebarExpand = true;
+                    sidebarTimer.Stop();
+            }
+            }
 
+            
+        }
+
+        private void menuButton_Click(object sender, EventArgs e)
+        {
+            sidebarTimer.Start();
+        }
     }
 }
+
 
