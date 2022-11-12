@@ -45,5 +45,10 @@ namespace Calendar_Project
 
 
         }
+
+        private void UserCreator_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -40,7 +40,7 @@ namespace Calendar_Project
         {
             StreamReader reader = new StreamReader("usersettings.ini");
             string data = reader.ReadLine();
-
+            EventHandler("C:/Users/Kyle Bramwell/AppData/Roaming/CIS302CalendarKAC/appointments");
             while (data != null)
             {
                 if (data.StartsWith("Name:"))
@@ -99,7 +99,6 @@ namespace Calendar_Project
             }
 
 
-
             //Sunday
             for (int i = 1; i < 25; i++)
             {
@@ -114,6 +113,19 @@ namespace Calendar_Project
             }
 
         }
+        
+        //Adds events to calendar 
+        private void EventHandler(string filepath)
+        {
+            //NOTE TO SELF, THEY NEED TO BE IN 24 HR FORMAT TO MAKE SENSE TO COMPUTER PLZ
+            string[] events = Directory.GetFiles(filepath);
+
+            string msg = string.Join(Environment.NewLine, events);
+            MessageBox.Show(msg);
+
+        }
+
+        //SIDEBAR SECTION ==================================================================================================================================================
         bool sidebarExpand;
         private void sidebarTimer_Tick(object sender, EventArgs e)
         {
@@ -156,6 +168,9 @@ namespace Calendar_Project
             }
         }
 
+        //================================================================================================================================================================================
+
+        //APPOINTMENT CREATOR
         private void newApptButton_Click(object sender, EventArgs e)
         {
             AppointmentCreator f = new AppointmentCreator();
