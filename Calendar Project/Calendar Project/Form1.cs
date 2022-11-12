@@ -113,7 +113,7 @@ namespace Calendar_Project
             }
 
         }
-        bool sidebarExpand = true;
+        bool sidebarExpand;
         private void sidebarTimer_Tick(object sender, EventArgs e)
         {
             if (sidebarExpand)
