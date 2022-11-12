@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.IO;
 using System.Windows.Forms;
+using System.Media;
 using Calendar_Project;
 
 namespace Calendar_Project
@@ -141,6 +142,24 @@ namespace Calendar_Project
         private void menuButton_Click(object sender, EventArgs e)
         {
             sidebarTimer.Start();
+        }
+
+        private void homeButton_Click(object sender, EventArgs e)
+        {
+            if (sidebarExpand)
+            {
+                sidebarTimer.Start();
+            }
+            else
+            {
+                SystemSounds.Asterisk.Play();
+            }
+        }
+
+        private void newApptButton_Click(object sender, EventArgs e)
+        {
+            AppointmentCreator f = new AppointmentCreator();
+            f.Show();
         }
     }
 }

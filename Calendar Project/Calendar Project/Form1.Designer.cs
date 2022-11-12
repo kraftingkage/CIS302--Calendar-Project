@@ -79,25 +79,24 @@ namespace Calendar_Project
             this.label25 = new System.Windows.Forms.Label();
             this.sidebar = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label27 = new System.Windows.Forms.Label();
             this.menuButton = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
             this.homeButton = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
+            this.newApptButton = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.button4 = new System.Windows.Forms.Button();
+            this.settingsButton = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.panel8 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
-            this.button6 = new System.Windows.Forms.Button();
+            this.helpButton = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.sidebarTimer = new System.Windows.Forms.Timer(this.components);
-            this.label27 = new System.Windows.Forms.Label();
             this.sidebar.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.menuButton)).BeginInit();
@@ -532,7 +531,7 @@ namespace Calendar_Project
             this.sidebar.MaximumSize = new System.Drawing.Size(247, 971);
             this.sidebar.MinimumSize = new System.Drawing.Size(67, 971);
             this.sidebar.Name = "sidebar";
-            this.sidebar.Size = new System.Drawing.Size(67, 971);
+            this.sidebar.Size = new System.Drawing.Size(247, 971);
             this.sidebar.TabIndex = 49;
             // 
             // panel1
@@ -543,6 +542,18 @@ namespace Calendar_Project
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(244, 122);
             this.panel1.TabIndex = 0;
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.BackColor = System.Drawing.Color.Transparent;
+            this.label27.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label27.ForeColor = System.Drawing.Color.White;
+            this.label27.Location = new System.Drawing.Point(71, 39);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(54, 21);
+            this.label27.TabIndex = 51;
+            this.label27.Text = "Menu";
             // 
             // menuButton
             // 
@@ -558,7 +569,6 @@ namespace Calendar_Project
             // panel2
             // 
             this.panel2.Controls.Add(this.panel3);
-            this.panel2.Controls.Add(this.homeButton);
             this.panel2.Location = new System.Drawing.Point(3, 131);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(244, 64);
@@ -566,27 +576,11 @@ namespace Calendar_Project
             // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.button1);
+            this.panel3.Controls.Add(this.homeButton);
             this.panel3.Location = new System.Drawing.Point(8, 8);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(244, 64);
             this.panel3.TabIndex = 51;
-            // 
-            // button1
-            // 
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(-19, -8);
-            this.button1.Name = "button1";
-            this.button1.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.button1.Size = new System.Drawing.Size(282, 76);
-            this.button1.TabIndex = 50;
-            this.button1.Text = "                 Home";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.UseVisualStyleBackColor = true;
             // 
             // homeButton
             // 
@@ -595,14 +589,15 @@ namespace Calendar_Project
             this.homeButton.ForeColor = System.Drawing.Color.White;
             this.homeButton.Image = ((System.Drawing.Image)(resources.GetObject("homeButton.Image")));
             this.homeButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.homeButton.Location = new System.Drawing.Point(-3, -6);
+            this.homeButton.Location = new System.Drawing.Point(-19, -8);
             this.homeButton.Name = "homeButton";
             this.homeButton.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.homeButton.Size = new System.Drawing.Size(258, 76);
+            this.homeButton.Size = new System.Drawing.Size(282, 76);
             this.homeButton.TabIndex = 50;
-            this.homeButton.Text = "          Home";
+            this.homeButton.Text = "                 Home";
             this.homeButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.homeButton.UseVisualStyleBackColor = true;
+            this.homeButton.Click += new System.EventHandler(this.homeButton_Click);
             // 
             // panel4
             // 
@@ -615,27 +610,28 @@ namespace Calendar_Project
             // 
             // panel5
             // 
-            this.panel5.Controls.Add(this.button2);
+            this.panel5.Controls.Add(this.newApptButton);
             this.panel5.Location = new System.Drawing.Point(8, 8);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(244, 64);
             this.panel5.TabIndex = 51;
             // 
-            // button2
+            // newApptButton
             // 
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(-19, -5);
-            this.button2.Name = "button2";
-            this.button2.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.button2.Size = new System.Drawing.Size(274, 76);
-            this.button2.TabIndex = 50;
-            this.button2.Text = "                 Settings";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.UseVisualStyleBackColor = true;
+            this.newApptButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.newApptButton.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.newApptButton.ForeColor = System.Drawing.Color.White;
+            this.newApptButton.Image = ((System.Drawing.Image)(resources.GetObject("newApptButton.Image")));
+            this.newApptButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.newApptButton.Location = new System.Drawing.Point(-19, -5);
+            this.newApptButton.Name = "newApptButton";
+            this.newApptButton.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.newApptButton.Size = new System.Drawing.Size(274, 76);
+            this.newApptButton.TabIndex = 50;
+            this.newApptButton.Text = "                 New Appointment";
+            this.newApptButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.newApptButton.UseVisualStyleBackColor = true;
+            this.newApptButton.Click += new System.EventHandler(this.newApptButton_Click);
             // 
             // button3
             // 
@@ -664,27 +660,27 @@ namespace Calendar_Project
             // 
             // panel7
             // 
-            this.panel7.Controls.Add(this.button4);
+            this.panel7.Controls.Add(this.settingsButton);
             this.panel7.Location = new System.Drawing.Point(8, 8);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(244, 64);
             this.panel7.TabIndex = 51;
             // 
-            // button4
+            // settingsButton
             // 
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(-19, -6);
-            this.button4.Name = "button4";
-            this.button4.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.button4.Size = new System.Drawing.Size(263, 76);
-            this.button4.TabIndex = 50;
-            this.button4.Text = "                 Help";
-            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.UseVisualStyleBackColor = true;
+            this.settingsButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.settingsButton.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.settingsButton.ForeColor = System.Drawing.Color.White;
+            this.settingsButton.Image = ((System.Drawing.Image)(resources.GetObject("settingsButton.Image")));
+            this.settingsButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.settingsButton.Location = new System.Drawing.Point(-19, -2);
+            this.settingsButton.Name = "settingsButton";
+            this.settingsButton.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.settingsButton.Size = new System.Drawing.Size(263, 76);
+            this.settingsButton.TabIndex = 50;
+            this.settingsButton.Text = "                 Settings";
+            this.settingsButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.settingsButton.UseVisualStyleBackColor = true;
             // 
             // button5
             // 
@@ -713,27 +709,27 @@ namespace Calendar_Project
             // 
             // panel9
             // 
-            this.panel9.Controls.Add(this.button6);
+            this.panel9.Controls.Add(this.helpButton);
             this.panel9.Location = new System.Drawing.Point(8, 8);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(244, 64);
             this.panel9.TabIndex = 51;
             // 
-            // button6
+            // helpButton
             // 
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button6.ForeColor = System.Drawing.Color.White;
-            this.button6.Image = ((System.Drawing.Image)(resources.GetObject("button6.Image")));
-            this.button6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button6.Location = new System.Drawing.Point(-19, -6);
-            this.button6.Name = "button6";
-            this.button6.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.button6.Size = new System.Drawing.Size(274, 76);
-            this.button6.TabIndex = 50;
-            this.button6.Text = "                 Test 1";
-            this.button6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button6.UseVisualStyleBackColor = true;
+            this.helpButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.helpButton.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.helpButton.ForeColor = System.Drawing.Color.White;
+            this.helpButton.Image = ((System.Drawing.Image)(resources.GetObject("helpButton.Image")));
+            this.helpButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.helpButton.Location = new System.Drawing.Point(-19, -5);
+            this.helpButton.Name = "helpButton";
+            this.helpButton.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.helpButton.Size = new System.Drawing.Size(274, 76);
+            this.helpButton.TabIndex = 50;
+            this.helpButton.Text = "                 Help";
+            this.helpButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.helpButton.UseVisualStyleBackColor = true;
             // 
             // button7
             // 
@@ -755,18 +751,6 @@ namespace Calendar_Project
             // 
             this.sidebarTimer.Interval = 5;
             this.sidebarTimer.Tick += new System.EventHandler(this.sidebarTimer_Tick);
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.BackColor = System.Drawing.Color.Transparent;
-            this.label27.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label27.ForeColor = System.Drawing.Color.White;
-            this.label27.Location = new System.Drawing.Point(71, 39);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(54, 21);
-            this.label27.TabIndex = 51;
-            this.label27.Text = "Menu";
             // 
             // Form1
             // 
@@ -890,21 +874,20 @@ namespace Calendar_Project
         private System.Windows.Forms.FlowLayoutPanel sidebar;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button homeButton;
         private System.Windows.Forms.PictureBox menuButton;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button homeButton;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button newApptButton;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button settingsButton;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Panel panel9;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button helpButton;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Timer sidebarTimer;
         private System.Windows.Forms.Label label27;
