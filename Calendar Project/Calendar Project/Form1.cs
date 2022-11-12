@@ -40,7 +40,7 @@ namespace Calendar_Project
             StreamReader reader = new StreamReader("usersettings.ini");
             string data = reader.ReadLine();
 
-            while(data != null)
+            while (data != null)
             {
                 if (data.StartsWith("Name:"))
                 {
@@ -48,7 +48,7 @@ namespace Calendar_Project
                     label1.Text = "Welcome,\n" + name;
                 }
                 data = reader.ReadLine();
-                }
+            }
 
             /*
              * Grabs the next sunday, and then finds previous sunday. NOTE: May find way to just find previous sunday, but this works without pain.
@@ -59,7 +59,7 @@ namespace Calendar_Project
             DateTime target = nextSun.AddDays(-7);
 
             int z = 0;
-            
+
             while (target != nextSun.AddDays(7))
             {
                 switch (z)
@@ -96,20 +96,53 @@ namespace Calendar_Project
                 z++;
                 target = target.AddDays(1);
             }
-            
 
 
-            /*Example of event controller
-            for(int i = 1; i < 24; i++)
+
+            //Sunday
+            for (int i = 1; i < 25; i++)
             {
-                UserControl1 event1 = new UserControl1(i.ToString());
+                eventControl event1 = new eventControl(i.ToString(), "This is Sunday");
                 panelSun.Controls.Add(event1);
             }
-            */
+            //Monday
+            for (int i = 1; i < 25; i++)
+            {
+                eventControl event1 = new eventControl(i.ToString(), "This is Monday");
+                panelMon.Controls.Add(event1);
+            }
 
         }
+        bool sidebarExpand = true;
+        private void sidebarTimer_Tick(object sender, EventArgs e)
+        {
+            if (sidebarExpand)
+            {
+                //If sidebar is expanded, minimise it.
+                sidebar.Width -= 10;
+                if (sidebar.Width == sidebar.MinimumSize.Width)
+                {
+                    sidebarExpand = false;
+                    sidebarTimer.Stop();
+                }
+            }else
+            {
+                sidebar.Width += 10;
+                if (sidebar.Width == sidebar.MaximumSize.Width)
+                {         
+                    sidebarExpand = true;
+                    sidebarTimer.Stop();
+            }
+            }
 
+            
+        }
 
+        private void menuButton_Click(object sender, EventArgs e)
+        {
+            sidebarTimer.Start();
+        }
     }
 }
+
 

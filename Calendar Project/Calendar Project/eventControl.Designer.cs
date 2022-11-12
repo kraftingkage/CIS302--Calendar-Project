@@ -1,7 +1,7 @@
 ﻿
 namespace Calendar_Project
 {
-    partial class UserControl1
+    partial class eventControl
     {
         /// <summary> 
         /// Required designer variable.
@@ -27,7 +27,7 @@ namespace Calendar_Project
         /// Required method for Designer support - do not modify 
         /// the contents of this method with the code editor.
         /// </summary>
-        private void InitializeComponent(string holder)
+        private void InitializeComponent()
         {
             this.eventTime = new System.Windows.Forms.Label();
             this.eventTitle = new System.Windows.Forms.Label();
@@ -36,30 +36,33 @@ namespace Calendar_Project
             // eventTime
             // 
             this.eventTime.AutoSize = true;
-            this.eventTime.Location = new System.Drawing.Point(4, 4);
+            this.eventTime.BackColor = System.Drawing.Color.Transparent;
+            this.eventTime.Location = new System.Drawing.Point(0, 6);
             this.eventTime.Name = "eventTime";
-            this.eventTime.Size = new System.Drawing.Size(62, 15);
+            this.eventTime.Size = new System.Drawing.Size(38, 15);
             this.eventTime.TabIndex = 0;
-            this.eventTime.Text = "eventTime";
+            this.eventTime.Text = "label1";
             // 
             // eventTitle
             // 
             this.eventTitle.AutoSize = true;
-            this.eventTitle.Location = new System.Drawing.Point(88, 4);
+            this.eventTitle.BackColor = System.Drawing.Color.Transparent;
+            this.eventTitle.Location = new System.Drawing.Point(44, 6);
             this.eventTitle.Name = "eventTitle";
-            this.eventTitle.Size = new System.Drawing.Size(58, 15);
+            this.eventTitle.Size = new System.Drawing.Size(38, 15);
             this.eventTitle.TabIndex = 1;
-            this.eventTitle.Text = "eventTitle";
+            this.eventTitle.Text = "label1";
             // 
-            // UserControl1
+            // eventControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.eventTitle);
             this.Controls.Add(this.eventTime);
-            this.Name = "UserControl1";
-            this.Size = new System.Drawing.Size(200, 36);
-            this.Load += new System.EventHandler(this.UserControl1_Load);
+            this.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Name = "eventControl";
+            this.Size = new System.Drawing.Size(150, 26);
+            this.Load += new System.EventHandler(this.eventControl_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
