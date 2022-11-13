@@ -39,7 +39,7 @@ namespace Calendar_Project
         private void initSettings()
         {
             StreamReader reader = new StreamReader("usersettings.ini");
-            string data = reader.ReadLine();
+            var data = reader.ReadLine();
             EventHandler("C:/Users/Kyle Bramwell/AppData/Roaming/CIS302CalendarKAC/appointments");
             while (data != null)
             {
@@ -120,10 +120,31 @@ namespace Calendar_Project
             //NOTE TO SELF, THEY NEED TO BE IN 24 HR FORMAT TO MAKE SENSE TO COMPUTER PLZ
             string[] events = Directory.GetFiles(filepath);
 
-            string msg = string.Join(Environment.NewLine, events);
-            MessageBox.Show(msg);
+            foreach(string e in events)
+            {
+                StreamReader r = new StreamReader(e);
+                var data = r.ReadLine();
+                while(data != null)
+                {
+                    string apptTitle = data;
+                    data = r.ReadLine();
+                    DateTime apptDate = DateTime.Parse(data);
+                    data = r.ReadLine();
+                    string apptLocation = data;
+                    data = r.ReadLine();
+                    string apptRequired = data;
+                    data = r.ReadLine();
+                    string apptNotes = data;
+                    data = r.ReadLine();
+                    MessageBox.Show($"And the RESSULLLTSSS IS!\nTitle:{apptTitle}\nTimeDate:{apptDate.ToString()}\nLocation:{apptLocation}\nRequired:{apptRequired}\nNotes:{apptNotes}");
+                }
+                
 
+
+            }
+            
         }
+
 
         //SIDEBAR SECTION ==================================================================================================================================================
         bool sidebarExpand;
