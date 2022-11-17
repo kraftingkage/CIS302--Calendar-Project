@@ -47,11 +47,13 @@ namespace Calendar_Project
             // 
             this.eventTitle.AutoSize = true;
             this.eventTitle.BackColor = System.Drawing.Color.Transparent;
+            this.eventTitle.ForeColor = System.Drawing.Color.Blue;
             this.eventTitle.Location = new System.Drawing.Point(44, 6);
             this.eventTitle.Name = "eventTitle";
             this.eventTitle.Size = new System.Drawing.Size(38, 15);
             this.eventTitle.TabIndex = 1;
             this.eventTitle.Text = "label1";
+            this.eventTitle.Click += new System.EventHandler(this.eventTitle_Click);
             // 
             // eventControl
             // 

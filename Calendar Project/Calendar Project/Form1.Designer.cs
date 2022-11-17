@@ -96,7 +96,12 @@ namespace Calendar_Project
             this.panel9 = new System.Windows.Forms.Panel();
             this.helpButton = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.panel11 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.sidebarTimer = new System.Windows.Forms.Timer(this.components);
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.sidebar.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.menuButton)).BeginInit();
@@ -108,6 +113,9 @@ namespace Calendar_Project
             this.panel7.SuspendLayout();
             this.panel8.SuspendLayout();
             this.panel9.SuspendLayout();
+            this.panel10.SuspendLayout();
+            this.panel11.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -526,12 +534,13 @@ namespace Calendar_Project
             this.sidebar.Controls.Add(this.panel4);
             this.sidebar.Controls.Add(this.panel6);
             this.sidebar.Controls.Add(this.panel8);
+            this.sidebar.Controls.Add(this.panel10);
             this.sidebar.Dock = System.Windows.Forms.DockStyle.Left;
             this.sidebar.Location = new System.Drawing.Point(0, 0);
             this.sidebar.MaximumSize = new System.Drawing.Size(247, 971);
             this.sidebar.MinimumSize = new System.Drawing.Size(67, 971);
             this.sidebar.Name = "sidebar";
-            this.sidebar.Size = new System.Drawing.Size(247, 971);
+            this.sidebar.Size = new System.Drawing.Size(67, 971);
             this.sidebar.TabIndex = 49;
             // 
             // panel1
@@ -747,16 +756,78 @@ namespace Calendar_Project
             this.button7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button7.UseVisualStyleBackColor = true;
             // 
+            // panel10
+            // 
+            this.panel10.Controls.Add(this.panel11);
+            this.panel10.Controls.Add(this.button2);
+            this.panel10.Location = new System.Drawing.Point(3, 411);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(244, 64);
+            this.panel10.TabIndex = 5;
+            // 
+            // panel11
+            // 
+            this.panel11.Controls.Add(this.button1);
+            this.panel11.Location = new System.Drawing.Point(8, 8);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(244, 64);
+            this.panel11.TabIndex = 51;
+            // 
+            // button1
+            // 
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(-19, -5);
+            this.button1.Name = "button1";
+            this.button1.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.button1.Size = new System.Drawing.Size(274, 76);
+            this.button1.TabIndex = 50;
+            this.button1.Text = "                 Exit";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button2
+            // 
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
+            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2.Location = new System.Drawing.Point(-3, -6);
+            this.button2.Name = "button2";
+            this.button2.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.button2.Size = new System.Drawing.Size(258, 76);
+            this.button2.TabIndex = 50;
+            this.button2.Text = "          Home";
+            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2.UseVisualStyleBackColor = true;
+            // 
             // sidebarTimer
             // 
-            this.sidebarTimer.Interval = 5;
+            this.sidebarTimer.Interval = 1;
             this.sidebarTimer.Tick += new System.EventHandler(this.sidebarTimer_Tick);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(1791, 15);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(53, 50);
+            this.pictureBox1.TabIndex = 50;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1856, 971);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.sidebar);
             this.Controls.Add(this.label25);
             this.Controls.Add(this.label24);
@@ -819,6 +890,9 @@ namespace Calendar_Project
             this.panel7.ResumeLayout(false);
             this.panel8.ResumeLayout(false);
             this.panel9.ResumeLayout(false);
+            this.panel10.ResumeLayout(false);
+            this.panel11.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -891,5 +965,10 @@ namespace Calendar_Project
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Timer sidebarTimer;
         private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Panel panel10;
+        private System.Windows.Forms.Panel panel11;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
     }
 }

@@ -18,6 +18,7 @@ namespace Calendar_Project
         public Form1()
         {
             InitializeComponent();
+            this.Text = "Calendar Project";
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -32,7 +33,6 @@ namespace Calendar_Project
             {
                 initSettings();
             }
-
         }
 
         //Setting all labels with their corresponding days/names
@@ -98,7 +98,7 @@ namespace Calendar_Project
                 target = target.AddDays(1);
             }
 
-
+            /*
             //Sunday
             for (int i = 1; i < 25; i++)
             {
@@ -111,16 +111,27 @@ namespace Calendar_Project
                 eventControl event1 = new eventControl(i.ToString(), "This is Monday");
                 panelMon.Controls.Add(event1);
             }
+            */
 
         }
-        
         //Adds events to calendar 
-        private void EventHandler(string filepath)
+        public void EventHandler(string filepath)
         {
+
             //NOTE TO SELF, THEY NEED TO BE IN 24 HR FORMAT TO MAKE SENSE TO COMPUTER PLZ
             string[] events = Directory.GetFiles(filepath);
 
-            foreach(string e in events)
+
+            //start by clearing all events
+            panelSun.Controls.Clear();
+            panelMon.Controls.Clear();
+            panelTues.Controls.Clear();
+            panelWed.Controls.Clear();
+            panelThurs.Controls.Clear();
+            panelFri.Controls.Clear();
+            panelSat.Controls.Clear();
+
+            foreach (string e in events)
             {
                 StreamReader r = new StreamReader(e);
                 var data = r.ReadLine();
@@ -129,14 +140,18 @@ namespace Calendar_Project
                     string apptTitle = data;
                     data = r.ReadLine();
                     DateTime apptDate = DateTime.Parse(data);
-                    data = r.ReadLine();
+                    data = r.ReadLine().ToString();
                     string apptLocation = data;
-                    data = r.ReadLine();
+                    data = r.ReadLine().ToString();
                     string apptRequired = data;
-                    data = r.ReadLine();
+                    data = r.ReadLine().ToString();
                     string apptNotes = data;
                     data = r.ReadLine();
-                    MessageBox.Show($"And the RESSULLLTSSS IS!\nTitle:{apptTitle}\nTimeDate:{apptDate.ToString()}\nLocation:{apptLocation}\nRequired:{apptRequired}\nNotes:{apptNotes}");
+                    r.Close();
+                    //MessageBox.Show($"And the RESSULLLTSSS IS!\nTitle:{apptTitle}\nTimeDate:{apptDate.ToString()}\nLocation:{apptLocation}\nRequired:{apptRequired}\nNotes:{apptNotes}");
+                    eventControl event1 = new eventControl(apptTitle,apptDate,apptLocation,apptRequired,apptNotes);
+                    panelSun.Controls.Add(event1);
+                    
                 }
                 
 
@@ -153,7 +168,7 @@ namespace Calendar_Project
             if (sidebarExpand)
             {
                 //If sidebar is expanded, minimise it.
-                sidebar.Width -= 10;
+                sidebar.Width -= 5;
                 if (sidebar.Width == sidebar.MinimumSize.Width)
                 {
                     sidebarExpand = false;
@@ -161,7 +176,7 @@ namespace Calendar_Project
                 }
             }else
             {
-                sidebar.Width += 10;
+                sidebar.Width += 5;
                 if (sidebar.Width == sidebar.MaximumSize.Width)
                 {         
                     sidebarExpand = true;
@@ -194,8 +209,20 @@ namespace Calendar_Project
         //APPOINTMENT CREATOR
         private void newApptButton_Click(object sender, EventArgs e)
         {
-            AppointmentCreator f = new AppointmentCreator();
+            AppointmentCreator f = new AppointmentCreator("create");
             f.Show();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            this.Controls.Clear();
+            InitializeComponent();
+            initSettings();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

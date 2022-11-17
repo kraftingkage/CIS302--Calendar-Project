@@ -39,9 +39,12 @@ namespace Calendar_Project
             this.apptNotesText = new System.Windows.Forms.TextBox();
             this.apptDateTime = new System.Windows.Forms.DateTimePicker();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.button1 = new System.Windows.Forms.Button();
+            this.createButton = new System.Windows.Forms.Button();
             this.apptLocationText = new System.Windows.Forms.TextBox();
             this.apptRequiredText = new System.Windows.Forms.TextBox();
+            this.modifyButton = new System.Windows.Forms.Button();
+            this.cancelButton = new System.Windows.Forms.Button();
+            this.deleteButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // apptTitleText
@@ -119,15 +122,15 @@ namespace Calendar_Project
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
-            // button1
+            // createButton
             // 
-            this.button1.Location = new System.Drawing.Point(593, 105);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 8;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.createButton.Location = new System.Drawing.Point(713, 12);
+            this.createButton.Name = "createButton";
+            this.createButton.Size = new System.Drawing.Size(75, 23);
+            this.createButton.TabIndex = 8;
+            this.createButton.Text = "Create";
+            this.createButton.UseVisualStyleBackColor = true;
+            this.createButton.Click += new System.EventHandler(this.button1_Click);
             // 
             // apptLocationText
             // 
@@ -143,14 +146,46 @@ namespace Calendar_Project
             this.apptRequiredText.Size = new System.Drawing.Size(240, 23);
             this.apptRequiredText.TabIndex = 10;
             // 
+            // modifyButton
+            // 
+            this.modifyButton.Location = new System.Drawing.Point(713, 41);
+            this.modifyButton.Name = "modifyButton";
+            this.modifyButton.Size = new System.Drawing.Size(75, 23);
+            this.modifyButton.TabIndex = 11;
+            this.modifyButton.Text = "Modify";
+            this.modifyButton.UseVisualStyleBackColor = true;
+            this.modifyButton.Click += new System.EventHandler(this.modifyButton_Click);
+            // 
+            // cancelButton
+            // 
+            this.cancelButton.Location = new System.Drawing.Point(632, 12);
+            this.cancelButton.Name = "cancelButton";
+            this.cancelButton.Size = new System.Drawing.Size(75, 23);
+            this.cancelButton.TabIndex = 12;
+            this.cancelButton.Text = "Cancel";
+            this.cancelButton.UseVisualStyleBackColor = true;
+            // 
+            // deleteButton
+            // 
+            this.deleteButton.Location = new System.Drawing.Point(632, 41);
+            this.deleteButton.Name = "deleteButton";
+            this.deleteButton.Size = new System.Drawing.Size(75, 23);
+            this.deleteButton.TabIndex = 13;
+            this.deleteButton.Text = "Delete";
+            this.deleteButton.UseVisualStyleBackColor = true;
+            this.deleteButton.Click += new System.EventHandler(this.deleteButton_Click);
+            // 
             // AppointmentCreator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.deleteButton);
+            this.Controls.Add(this.cancelButton);
+            this.Controls.Add(this.modifyButton);
             this.Controls.Add(this.apptRequiredText);
             this.Controls.Add(this.apptLocationText);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.createButton);
             this.Controls.Add(this.apptDateTime);
             this.Controls.Add(this.apptNotesText);
             this.Controls.Add(this.label5);
@@ -160,7 +195,7 @@ namespace Calendar_Project
             this.Controls.Add(this.label1);
             this.Controls.Add(this.apptTitleText);
             this.Name = "AppointmentCreator";
-            this.Text = "AppointmentCreator";
+            this.Text = "Appointment";
             this.Load += new System.EventHandler(this.AppointmentCreator_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -178,8 +213,11 @@ namespace Calendar_Project
         private System.Windows.Forms.TextBox apptNotesText;
         private System.Windows.Forms.DateTimePicker apptDateTime;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button createButton;
         private System.Windows.Forms.TextBox apptLocationText;
         private System.Windows.Forms.TextBox apptRequiredText;
+        private System.Windows.Forms.Button modifyButton;
+        private System.Windows.Forms.Button cancelButton;
+        private System.Windows.Forms.Button deleteButton;
     }
 }
