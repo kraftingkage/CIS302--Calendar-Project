@@ -8,14 +8,16 @@ using System.Text;
 using System.Threading.Tasks;
 using System.IO;
 using System.Windows.Forms;
-using static Calendar_Project.Form1;
+using System.Diagnostics;
 
 namespace Calendar_Project
 {
+    #region InitClass
     public partial class AppointmentCreator : Form
     {
         string state;
         string appdatapath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "CIS302CalendarKAC/appointments");
+        bool update = false;
         public AppointmentCreator(string state)
         {
             InitializeComponent();
@@ -36,61 +38,90 @@ namespace Calendar_Project
             }
         }
 
-        public void passVar(string title, DateTime time, string location, string required, string notes)
+        public void passVar(string title, DateTime time, string location, string required, string optional, string notes)
         {
             apptTitleText.Text = title;
             apptDateTime.Value = time;
             apptLocationText.Text = location;
             apptRequiredText.Text = required;
-            apptNotesText.Text = notes;
-            
+            optionalText.Text = optional;
+            apptNotesText.Text = notes.Replace("\n","\r\n");
+            update = true;
             this.Text = title;
-        }
+    }
         private void setCustomDateTime()
         {
             apptDateTime.Format = DateTimePickerFormat.Custom;
             apptDateTime.CustomFormat = "dddd, MMMM dd. hh:mm tt";
         }
+        #endregion
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            //Grabs the text/datetime from text boxes on form and invokes CreateNewAppointment
-            CreateNewAppoitnment(apptTitleText.Text, apptDateTime.Value, apptLocationText.Text, apptRequiredText.Text, apptNotesText.Text);
-            MessageBox.Show(apptDateTime.Value.ToString());
-        }
 
+
+
+
+
+
+
+        #region AppointmentControl
         //CreateNewAppointment can be called from anywhere, for modularity, however will likely only be called from this class.
-        public void CreateNewAppoitnment(string title, DateTime time, string location, string required, string notes)
+        public void CreateNewAppoitnment(string title, DateTime time, string location, string required, string optional, string notes)
         {
+            string invupda;
             Directory.CreateDirectory(appdatapath);
-            var filepath = Path.Combine(appdatapath, $@"{ time.ToString("yyyyMMddHHmm") }.ini"); 
+            var filepath = Path.Combine(appdatapath, $@"{ time.ToString("yyyyMMddHHmm") }.ini");
             /* 
              * Requires title, datetime, location, required, & notes. Feilds can be blank, excluding date. Opens the existing appointment data file and appends a new line.
              * 
              */
             if (!File.Exists(filepath))
             {
+
                 StreamWriter w = new StreamWriter(filepath);
                 w.WriteLine(title);
                 w.WriteLine(time.ToString());
                 w.WriteLine(location);
                 w.WriteLine(required);
+                w.WriteLine(optional);
                 w.WriteLine(notes);
                 w.Close();
 
-                MessageBox.Show(@$"Appointment Created {time.ToString("yyyyMMddHHmm")}");
+                MessageBox.Show("Appointment has been created/modified, to see this update please click the refresh button on your calendar.");
+                this.Close();
+
+
             }
             else
             {
                 MessageBox.Show("There is an appointment with the same start time already on your calendar. Please either remove the existing appointment or select a new start time for this appointment.");
             }
         }
-
         public void DeleteAppointment()
         {
             var delfilepath = Path.Combine(appdatapath, $@"{apptDateTime.Value.ToString("yyyyMMddHHmm")}.ini");
             File.Delete(delfilepath);
         }
+
+        private void SendEmail(string required, string cc, string invupda, string title, DateTime time, string location, string notes)
+        {
+            string mailto = $"mailto:{required}?Cc={cc}&subject={invupda}: {title}&body=Title: {title}%0ADate: {time.ToString()}%0ALocation: {location}%0A%0A%0A{notes}";
+            Process p = new Process();
+            p.StartInfo.UseShellExecute = true;
+            p.StartInfo.FileName = mailto;
+            p.Start();
+        }
+
+        #endregion
+
+
+
+        #region ButtonControls
+        private void button1_Click(object sender, EventArgs e)
+        {
+            //Grabs the text/datetime from text boxes on form and invokes CreateNewAppointment
+            CreateNewAppoitnment(apptTitleText.Text, apptDateTime.Value, apptLocationText.Text, apptRequiredText.Text, optionalText.Text, apptNotesText.Text);
+        }
+
 
         private void deleteButton_Click(object sender, EventArgs e)
         {
@@ -108,8 +139,26 @@ namespace Calendar_Project
         private void modifyButton_Click(object sender, EventArgs e)
         {
             DeleteAppointment();
-            CreateNewAppoitnment(apptTitleText.Text, apptDateTime.Value, apptLocationText.Text, apptRequiredText.Text, apptNotesText.Text);
+            MessageBox.Show(apptTitleText.Text + apptDateTime.Value + apptLocationText.Text + apptRequiredText.Text + apptNotesText.Text);
+            CreateNewAppoitnment(apptTitleText.Text, apptDateTime.Value, apptLocationText.Text, apptRequiredText.Text, optionalText.Text, apptNotesText.Text);
             
         }
+
+        private void cancelButton_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void sendInviteButton_Click(object sender, EventArgs e)
+        {
+            string subj = "You have been invited to";
+            if (update)
+            {
+                subj = "UPDATE You have been invited to";
+            }
+            SendEmail(apptRequiredText.Text, optionalText.Text, subj , apptTitleText.Text, apptDateTime.Value, apptLocationText.Text, apptNotesText.Text.Replace("\r\n", "%0A"));
+         
+        }
+        #endregion
     }
 }

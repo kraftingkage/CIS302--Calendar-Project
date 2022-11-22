@@ -48,7 +48,7 @@ namespace Calendar_Project
             this.eventTitle.AutoSize = true;
             this.eventTitle.BackColor = System.Drawing.Color.Transparent;
             this.eventTitle.ForeColor = System.Drawing.Color.Blue;
-            this.eventTitle.Location = new System.Drawing.Point(44, 6);
+            this.eventTitle.Location = new System.Drawing.Point(86, 6);
             this.eventTitle.Name = "eventTitle";
             this.eventTitle.Size = new System.Drawing.Size(38, 15);
             this.eventTitle.TabIndex = 1;
@@ -59,11 +59,12 @@ namespace Calendar_Project
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.Controls.Add(this.eventTitle);
             this.Controls.Add(this.eventTime);
             this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Name = "eventControl";
-            this.Size = new System.Drawing.Size(150, 26);
+            this.Size = new System.Drawing.Size(200, 26);
             this.Load += new System.EventHandler(this.eventControl_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

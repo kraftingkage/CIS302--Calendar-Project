@@ -45,6 +45,9 @@ namespace Calendar_Project
             this.modifyButton = new System.Windows.Forms.Button();
             this.cancelButton = new System.Windows.Forms.Button();
             this.deleteButton = new System.Windows.Forms.Button();
+            this.optionalText = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.sendInviteButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // apptTitleText
@@ -148,7 +151,7 @@ namespace Calendar_Project
             // 
             // modifyButton
             // 
-            this.modifyButton.Location = new System.Drawing.Point(713, 41);
+            this.modifyButton.Location = new System.Drawing.Point(713, 12);
             this.modifyButton.Name = "modifyButton";
             this.modifyButton.Size = new System.Drawing.Size(75, 23);
             this.modifyButton.TabIndex = 11;
@@ -164,10 +167,11 @@ namespace Calendar_Project
             this.cancelButton.TabIndex = 12;
             this.cancelButton.Text = "Cancel";
             this.cancelButton.UseVisualStyleBackColor = true;
+            this.cancelButton.Click += new System.EventHandler(this.cancelButton_Click);
             // 
             // deleteButton
             // 
-            this.deleteButton.Location = new System.Drawing.Point(632, 41);
+            this.deleteButton.Location = new System.Drawing.Point(632, 12);
             this.deleteButton.Name = "deleteButton";
             this.deleteButton.Size = new System.Drawing.Size(75, 23);
             this.deleteButton.TabIndex = 13;
@@ -175,11 +179,40 @@ namespace Calendar_Project
             this.deleteButton.UseVisualStyleBackColor = true;
             this.deleteButton.Click += new System.EventHandler(this.deleteButton_Click);
             // 
+            // optionalText
+            // 
+            this.optionalText.Location = new System.Drawing.Point(419, 141);
+            this.optionalText.Name = "optionalText";
+            this.optionalText.Size = new System.Drawing.Size(240, 23);
+            this.optionalText.TabIndex = 14;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(356, 144);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(56, 15);
+            this.label6.TabIndex = 15;
+            this.label6.Text = "Optional:";
+            // 
+            // sendInviteButton
+            // 
+            this.sendInviteButton.Location = new System.Drawing.Point(665, 144);
+            this.sendInviteButton.Name = "sendInviteButton";
+            this.sendInviteButton.Size = new System.Drawing.Size(75, 23);
+            this.sendInviteButton.TabIndex = 16;
+            this.sendInviteButton.Text = "Send Invite";
+            this.sendInviteButton.UseVisualStyleBackColor = true;
+            this.sendInviteButton.Click += new System.EventHandler(this.sendInviteButton_Click);
+            // 
             // AppointmentCreator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.sendInviteButton);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.optionalText);
             this.Controls.Add(this.deleteButton);
             this.Controls.Add(this.cancelButton);
             this.Controls.Add(this.modifyButton);
@@ -219,5 +252,8 @@ namespace Calendar_Project
         private System.Windows.Forms.Button modifyButton;
         private System.Windows.Forms.Button cancelButton;
         private System.Windows.Forms.Button deleteButton;
+        private System.Windows.Forms.TextBox optionalText;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button sendInviteButton;
     }
 }
