@@ -70,6 +70,7 @@ namespace Calendar_Project
             this.Controls.Add(this.userName);
             this.Name = "UserCreator";
             this.Text = "UserCreator";
+            this.Load += new System.EventHandler(this.UserCreator_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
