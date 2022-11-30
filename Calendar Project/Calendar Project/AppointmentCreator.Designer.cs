@@ -118,7 +118,7 @@ namespace Calendar_Project
             this.apptDateTime.MinDate = new System.DateTime(2022, 11, 12, 0, 0, 0, 0);
             this.apptDateTime.Name = "apptDateTime";
             this.apptDateTime.Size = new System.Drawing.Size(240, 23);
-            this.apptDateTime.TabIndex = 7;
+            this.apptDateTime.TabIndex = 1;
             // 
             // contextMenuStrip1
             // 
@@ -130,7 +130,7 @@ namespace Calendar_Project
             this.createButton.Location = new System.Drawing.Point(713, 12);
             this.createButton.Name = "createButton";
             this.createButton.Size = new System.Drawing.Size(75, 23);
-            this.createButton.TabIndex = 8;
+            this.createButton.TabIndex = 7;
             this.createButton.Text = "Create";
             this.createButton.UseVisualStyleBackColor = true;
             this.createButton.Click += new System.EventHandler(this.button1_Click);
@@ -140,21 +140,21 @@ namespace Calendar_Project
             this.apptLocationText.Location = new System.Drawing.Point(110, 109);
             this.apptLocationText.Name = "apptLocationText";
             this.apptLocationText.Size = new System.Drawing.Size(240, 23);
-            this.apptLocationText.TabIndex = 9;
+            this.apptLocationText.TabIndex = 2;
             // 
             // apptRequiredText
             // 
             this.apptRequiredText.Location = new System.Drawing.Point(110, 138);
             this.apptRequiredText.Name = "apptRequiredText";
             this.apptRequiredText.Size = new System.Drawing.Size(240, 23);
-            this.apptRequiredText.TabIndex = 10;
+            this.apptRequiredText.TabIndex = 3;
             // 
             // modifyButton
             // 
             this.modifyButton.Location = new System.Drawing.Point(713, 12);
             this.modifyButton.Name = "modifyButton";
             this.modifyButton.Size = new System.Drawing.Size(75, 23);
-            this.modifyButton.TabIndex = 11;
+            this.modifyButton.TabIndex = 7;
             this.modifyButton.Text = "Modify";
             this.modifyButton.UseVisualStyleBackColor = true;
             this.modifyButton.Click += new System.EventHandler(this.modifyButton_Click);
@@ -164,7 +164,7 @@ namespace Calendar_Project
             this.cancelButton.Location = new System.Drawing.Point(632, 12);
             this.cancelButton.Name = "cancelButton";
             this.cancelButton.Size = new System.Drawing.Size(75, 23);
-            this.cancelButton.TabIndex = 12;
+            this.cancelButton.TabIndex = 8;
             this.cancelButton.Text = "Cancel";
             this.cancelButton.UseVisualStyleBackColor = true;
             this.cancelButton.Click += new System.EventHandler(this.cancelButton_Click);
@@ -174,7 +174,7 @@ namespace Calendar_Project
             this.deleteButton.Location = new System.Drawing.Point(632, 12);
             this.deleteButton.Name = "deleteButton";
             this.deleteButton.Size = new System.Drawing.Size(75, 23);
-            this.deleteButton.TabIndex = 13;
+            this.deleteButton.TabIndex = 8;
             this.deleteButton.Text = "Delete";
             this.deleteButton.UseVisualStyleBackColor = true;
             this.deleteButton.Click += new System.EventHandler(this.deleteButton_Click);
@@ -184,7 +184,7 @@ namespace Calendar_Project
             this.optionalText.Location = new System.Drawing.Point(419, 141);
             this.optionalText.Name = "optionalText";
             this.optionalText.Size = new System.Drawing.Size(240, 23);
-            this.optionalText.TabIndex = 14;
+            this.optionalText.TabIndex = 4;
             // 
             // label6
             // 
@@ -200,7 +200,7 @@ namespace Calendar_Project
             this.sendInviteButton.Location = new System.Drawing.Point(665, 144);
             this.sendInviteButton.Name = "sendInviteButton";
             this.sendInviteButton.Size = new System.Drawing.Size(75, 23);
-            this.sendInviteButton.TabIndex = 16;
+            this.sendInviteButton.TabIndex = 5;
             this.sendInviteButton.Text = "Send Invite";
             this.sendInviteButton.UseVisualStyleBackColor = true;
             this.sendInviteButton.Click += new System.EventHandler(this.sendInviteButton_Click);

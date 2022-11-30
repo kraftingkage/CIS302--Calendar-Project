@@ -52,7 +52,7 @@ namespace Calendar_Project
             // 
             // buttonCreateAccount
             // 
-            this.buttonCreateAccount.Location = new System.Drawing.Point(85, 140);
+            this.buttonCreateAccount.Location = new System.Drawing.Point(96, 140);
             this.buttonCreateAccount.Name = "buttonCreateAccount";
             this.buttonCreateAccount.Size = new System.Drawing.Size(111, 26);
             this.buttonCreateAccount.TabIndex = 2;
