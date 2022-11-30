@@ -15,6 +15,8 @@ namespace Calendar_Project
 {
     public partial class Form1 : Form
     {
+
+        #region InitArea
         public Form1()
         {
             InitializeComponent();
@@ -23,16 +25,19 @@ namespace Calendar_Project
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            if (!File.Exists("usersettings.ini"))
+
+            if(!File.Exists("usersettings.ini"))
             {
                 MessageBox.Show("User Settings file not detected... Initiating setup.");
                 UserCreator f = new UserCreator();
-                f.Show();
+                f.ShowDialog();
+                initSettings();
             }
             else
             {
                 initSettings();
             }
+                
         }
 
         //Setting all labels with their corresponding days/names
@@ -40,7 +45,8 @@ namespace Calendar_Project
         {
             StreamReader reader = new StreamReader("usersettings.ini");
             var data = reader.ReadLine();
-            EventHandler("C:/Users/Kyle Bramwell/AppData/Roaming/CIS302CalendarKAC/appointments");
+            var filepath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "CIS302CalendarKAC/appointments");
+            EventHandler(filepath);
             while (data != null)
             {
                 if (data.StartsWith("Name:"))
@@ -50,6 +56,7 @@ namespace Calendar_Project
                 }
                 data = reader.ReadLine();
             }
+            reader.Close();
 
             /*
              * Grabs the next sunday, and then finds previous sunday. NOTE: May find way to just find previous sunday, but this works without pain.
@@ -103,6 +110,10 @@ namespace Calendar_Project
             }
 
         }
+
+        #endregion
+        #region Event Handler
+
         //Adds events to calendar 
         public void EventHandler(string filepath)
         {
@@ -199,9 +210,9 @@ namespace Calendar_Project
 
 
         }
-            
 
-
+        #endregion
+        #region Sidebar
         //SIDEBAR SECTION ==================================================================================================================================================
         bool sidebarExpand;
         private void sidebarTimer_Tick(object sender, EventArgs e)
@@ -227,6 +238,8 @@ namespace Calendar_Project
 
             
         }
+        #endregion
+        #region Buttons
 
         private void menuButton_Click(object sender, EventArgs e)
         {
@@ -244,10 +257,6 @@ namespace Calendar_Project
                 SystemSounds.Asterisk.Play();
             }
         }
-
-        //================================================================================================================================================================================
-
-        //APPOINTMENT CREATOR
         private void newApptButton_Click(object sender, EventArgs e)
         {
             AppointmentCreator f = new AppointmentCreator("create");
@@ -260,11 +269,22 @@ namespace Calendar_Project
             InitializeComponent();
             initSettings();
         }
+        private void settingsButton_Click(object sender, EventArgs e)
+        {
+            SettingsForm f = new SettingsForm();
+            f.Show();
+        }
 
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
         }
+
+        private void helpButton_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("To create a new appointment for your calendar, please open the menu and click 'Add Appointment'. After your appointment is created, refresh the calendar and your appointment will appear.");
+        }
+        #endregion
     }
 }
 

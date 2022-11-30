@@ -98,7 +98,7 @@ namespace Calendar_Project
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(74, 35);
+            this.label1.Location = new System.Drawing.Point(73, 3);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(109, 30);
             this.label1.TabIndex = 3;
@@ -108,7 +108,7 @@ namespace Calendar_Project
             // 
             this.todayTitle.AutoSize = true;
             this.todayTitle.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.todayTitle.Location = new System.Drawing.Point(325, 125);
+            this.todayTitle.Location = new System.Drawing.Point(140, 112);
             this.todayTitle.Name = "todayTitle";
             this.todayTitle.Size = new System.Drawing.Size(98, 32);
             this.todayTitle.TabIndex = 4;
@@ -118,7 +118,7 @@ namespace Calendar_Project
             // 
             this.p1Title.AutoSize = true;
             this.p1Title.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.p1Title.Location = new System.Drawing.Point(543, 125);
+            this.p1Title.Location = new System.Drawing.Point(358, 112);
             this.p1Title.Name = "p1Title";
             this.p1Title.Size = new System.Drawing.Size(108, 32);
             this.p1Title.TabIndex = 5;
@@ -128,7 +128,7 @@ namespace Calendar_Project
             // 
             this.p2Title.AutoSize = true;
             this.p2Title.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.p2Title.Location = new System.Drawing.Point(767, 125);
+            this.p2Title.Location = new System.Drawing.Point(582, 112);
             this.p2Title.Name = "p2Title";
             this.p2Title.Size = new System.Drawing.Size(106, 32);
             this.p2Title.TabIndex = 6;
@@ -138,7 +138,7 @@ namespace Calendar_Project
             // 
             this.p3Title.AutoSize = true;
             this.p3Title.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.p3Title.Location = new System.Drawing.Point(971, 125);
+            this.p3Title.Location = new System.Drawing.Point(786, 112);
             this.p3Title.Name = "p3Title";
             this.p3Title.Size = new System.Drawing.Size(145, 32);
             this.p3Title.TabIndex = 7;
@@ -148,7 +148,7 @@ namespace Calendar_Project
             // 
             this.p4Title.AutoSize = true;
             this.p4Title.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.p4Title.Location = new System.Drawing.Point(1207, 125);
+            this.p4Title.Location = new System.Drawing.Point(1022, 112);
             this.p4Title.Name = "p4Title";
             this.p4Title.Size = new System.Drawing.Size(119, 32);
             this.p4Title.TabIndex = 8;
@@ -158,7 +158,7 @@ namespace Calendar_Project
             // 
             this.p5Title.AutoSize = true;
             this.p5Title.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.p5Title.Location = new System.Drawing.Point(1447, 125);
+            this.p5Title.Location = new System.Drawing.Point(1262, 112);
             this.p5Title.Name = "p5Title";
             this.p5Title.Size = new System.Drawing.Size(84, 32);
             this.p5Title.TabIndex = 9;
@@ -168,7 +168,7 @@ namespace Calendar_Project
             // 
             this.p6Title.AutoSize = true;
             this.p6Title.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.p6Title.Location = new System.Drawing.Point(1655, 125);
+            this.p6Title.Location = new System.Drawing.Point(1470, 112);
             this.p6Title.Name = "p6Title";
             this.p6Title.Size = new System.Drawing.Size(115, 32);
             this.p6Title.TabIndex = 10;
@@ -177,7 +177,7 @@ namespace Calendar_Project
             // todayDate
             // 
             this.todayDate.AutoSize = true;
-            this.todayDate.Location = new System.Drawing.Point(342, 110);
+            this.todayDate.Location = new System.Drawing.Point(157, 97);
             this.todayDate.Name = "todayDate";
             this.todayDate.Size = new System.Drawing.Size(65, 15);
             this.todayDate.TabIndex = 11;
@@ -186,7 +186,7 @@ namespace Calendar_Project
             // p1Date
             // 
             this.p1Date.AutoSize = true;
-            this.p1Date.Location = new System.Drawing.Point(569, 110);
+            this.p1Date.Location = new System.Drawing.Point(384, 97);
             this.p1Date.Name = "p1Date";
             this.p1Date.Size = new System.Drawing.Size(56, 15);
             this.p1Date.TabIndex = 12;
@@ -195,7 +195,7 @@ namespace Calendar_Project
             // p2Date
             // 
             this.p2Date.AutoSize = true;
-            this.p2Date.Location = new System.Drawing.Point(794, 110);
+            this.p2Date.Location = new System.Drawing.Point(609, 97);
             this.p2Date.Name = "p2Date";
             this.p2Date.Size = new System.Drawing.Size(53, 15);
             this.p2Date.TabIndex = 13;
@@ -204,7 +204,7 @@ namespace Calendar_Project
             // p3Date
             // 
             this.p3Date.AutoSize = true;
-            this.p3Date.Location = new System.Drawing.Point(1017, 110);
+            this.p3Date.Location = new System.Drawing.Point(832, 97);
             this.p3Date.Name = "p3Date";
             this.p3Date.Size = new System.Drawing.Size(53, 15);
             this.p3Date.TabIndex = 14;
@@ -213,7 +213,7 @@ namespace Calendar_Project
             // p4Date
             // 
             this.p4Date.AutoSize = true;
-            this.p4Date.Location = new System.Drawing.Point(1240, 110);
+            this.p4Date.Location = new System.Drawing.Point(1055, 97);
             this.p4Date.Name = "p4Date";
             this.p4Date.Size = new System.Drawing.Size(53, 15);
             this.p4Date.TabIndex = 15;
@@ -222,7 +222,7 @@ namespace Calendar_Project
             // p5Date
             // 
             this.p5Date.AutoSize = true;
-            this.p5Date.Location = new System.Drawing.Point(1468, 110);
+            this.p5Date.Location = new System.Drawing.Point(1283, 97);
             this.p5Date.Name = "p5Date";
             this.p5Date.Size = new System.Drawing.Size(42, 15);
             this.p5Date.TabIndex = 16;
@@ -231,7 +231,7 @@ namespace Calendar_Project
             // p6Date
             // 
             this.p6Date.AutoSize = true;
-            this.p6Date.Location = new System.Drawing.Point(1689, 110);
+            this.p6Date.Location = new System.Drawing.Point(1504, 97);
             this.p6Date.Name = "p6Date";
             this.p6Date.Size = new System.Drawing.Size(46, 15);
             this.p6Date.TabIndex = 17;
@@ -239,49 +239,57 @@ namespace Calendar_Project
             // 
             // panelSun
             // 
-            this.panelSun.Location = new System.Drawing.Point(274, 160);
+            this.panelSun.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelSun.Location = new System.Drawing.Point(89, 147);
             this.panelSun.Name = "panelSun";
             this.panelSun.Size = new System.Drawing.Size(200, 779);
             this.panelSun.TabIndex = 18;
             // 
             // panelMon
             // 
-            this.panelMon.Location = new System.Drawing.Point(497, 160);
+            this.panelMon.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelMon.Location = new System.Drawing.Point(312, 147);
             this.panelMon.Name = "panelMon";
             this.panelMon.Size = new System.Drawing.Size(200, 779);
             this.panelMon.TabIndex = 19;
             // 
             // panelTues
             // 
-            this.panelTues.Location = new System.Drawing.Point(720, 160);
+            this.panelTues.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelTues.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            this.panelTues.Location = new System.Drawing.Point(535, 147);
             this.panelTues.Name = "panelTues";
             this.panelTues.Size = new System.Drawing.Size(200, 779);
             this.panelTues.TabIndex = 20;
             // 
             // panelWed
             // 
-            this.panelWed.Location = new System.Drawing.Point(943, 160);
+            this.panelWed.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelWed.Location = new System.Drawing.Point(758, 147);
             this.panelWed.Name = "panelWed";
             this.panelWed.Size = new System.Drawing.Size(200, 779);
             this.panelWed.TabIndex = 21;
             // 
             // panelThurs
             // 
-            this.panelThurs.Location = new System.Drawing.Point(1166, 160);
+            this.panelThurs.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelThurs.Location = new System.Drawing.Point(981, 147);
             this.panelThurs.Name = "panelThurs";
             this.panelThurs.Size = new System.Drawing.Size(200, 779);
             this.panelThurs.TabIndex = 22;
             // 
             // panelFri
             // 
-            this.panelFri.Location = new System.Drawing.Point(1389, 160);
+            this.panelFri.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelFri.Location = new System.Drawing.Point(1204, 147);
             this.panelFri.Name = "panelFri";
             this.panelFri.Size = new System.Drawing.Size(200, 779);
             this.panelFri.TabIndex = 23;
             // 
             // panelSat
             // 
-            this.panelSat.Location = new System.Drawing.Point(1612, 160);
+            this.panelSat.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelSat.Location = new System.Drawing.Point(1427, 147);
             this.panelSat.Name = "panelSat";
             this.panelSat.Size = new System.Drawing.Size(200, 779);
             this.panelSat.TabIndex = 24;
@@ -450,6 +458,7 @@ namespace Calendar_Project
             this.settingsButton.Text = "                 Settings";
             this.settingsButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.settingsButton.UseVisualStyleBackColor = true;
+            this.settingsButton.Click += new System.EventHandler(this.settingsButton_Click);
             // 
             // button5
             // 
@@ -499,6 +508,7 @@ namespace Calendar_Project
             this.helpButton.Text = "                 Help";
             this.helpButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.helpButton.UseVisualStyleBackColor = true;
+            this.helpButton.Click += new System.EventHandler(this.helpButton_Click);
             // 
             // button7
             // 
@@ -575,7 +585,7 @@ namespace Calendar_Project
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(1791, 15);
+            this.pictureBox1.Location = new System.Drawing.Point(1574, 3);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(53, 50);
             this.pictureBox1.TabIndex = 50;
@@ -587,7 +597,7 @@ namespace Calendar_Project
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.ClientSize = new System.Drawing.Size(1856, 971);
+            this.ClientSize = new System.Drawing.Size(1629, 932);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.sidebar);
             this.Controls.Add(this.panelSat);
@@ -614,7 +624,7 @@ namespace Calendar_Project
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "CAK Calendar";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.sidebar.ResumeLayout(false);
             this.panel1.ResumeLayout(false);

@@ -21,7 +21,7 @@ namespace Calendar_Project
         private void buttonCreateAccount_Click(object sender, EventArgs e)
         {
             String name = userName.Text;
-            StreamWriter writer1, writer2;
+            StreamWriter writer1;
 
             try
             {
@@ -30,13 +30,10 @@ namespace Calendar_Project
                 writer1.WriteLine("Name: "+ name);
                 writer1.Close();
 
-                writer2 = new StreamWriter("userappointments.ini");
-                writer1.Close();
+                //MessageBox.Show("User account has been created, closing application.");
+                //Application.Exit();
 
-
-                
-                MessageBox.Show("User account has been created, closing application.");
-                Application.Exit();
+                this.Close();
             }
             catch(Exception ex)
             {

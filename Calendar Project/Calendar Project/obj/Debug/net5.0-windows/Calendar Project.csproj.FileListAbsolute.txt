@@ -20,3 +20,4 @@ C:\Users\Kyle Bramwell\Source\Repos\kraftingkage\CIS302--Calendar-Project\Calend
 C:\Users\Kyle Bramwell\Source\Repos\kraftingkage\CIS302--Calendar-Project\Calendar Project\Calendar Project\obj\Debug\net5.0-windows\Calendar_Project.eventControl.resources
 C:\Users\Kyle Bramwell\Source\Repos\kraftingkage\CIS302--Calendar-Project\Calendar Project\Calendar Project\obj\Debug\net5.0-windows\Calendar_Project.Properties.Resources.resources
 C:\Users\Kyle Bramwell\Source\Repos\kraftingkage\CIS302--Calendar-Project\Calendar Project\Calendar Project\obj\Debug\net5.0-windows\Calendar_Project.AppointmentCreator.resources
+C:\Users\Kyle Bramwell\Source\Repos\kraftingkage\CIS302--Calendar-Project\Calendar Project\Calendar Project\obj\Debug\net5.0-windows\Calendar_Project.SettingsForm.resources
